@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AbhiCroz Pizza</title>
+    <link rel="stylesheet" href="ASSI2.css">
+    <!--this helps us connect to our stylesheet or css file -->
+</head>
+
+<body>
+    <header>
+        <h1>AbhiCroz Pizza</h1>
+        <form action="./php/somefile.php" method="post" enctype="multipart/form-data">
+         <!--this is used to connect to our php file -->  
+        <nav>
+            <ul>
+                <!--we use ul to create a list -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <fieldset>
+                <!--fieldset is used to group related elements in a form -->
+                <p>Personal Information</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </fieldset>
+
+            <fieldset>
+                <p>Pizza Information</p>
+                <label for="number-of-pizzas">Number of Pizzas:</label>
+                <input type="number" id="number-of-pizzas" name="number-of-pizzas" min="1" max="10" required>
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="">Please select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="toppings">Toppings:</label>
+                <ul id="toppings"> <!-- we gave id to ul -->
+                    <li><input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni"><label
+                            for="pepperoni">Pepperoni</label></li>
+                    <li><input type="checkbox" id="sausage" name="toppings[]" value="sausage"><label
+                            for="sausage">Sausage</label></li>
+                    <li><input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms"><label
+                            for="mushrooms">Mushrooms</label></li>
+                    <li><input type="checkbox" id="olives" name="toppings[]" value="olives"><label
+                            for="olives">Olives</label></li>
+                    <li><input type="checkbox" id="onions" name="toppings[]" value="onions"><label
+                            for="onions">Onions</label></li>
+                </ul> 
+                <label for="delivery">Delivery or Pickup:</label>
+                <div id="delivery"> <!-- we gave id to div -->
+                    <label><input type="radio" name="delivery" value="delivery" checked>Delivery</label>
+                    <label><input type="radio" name="delivery" value="pickup">Pickup</label>
+                </div>  
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions"></textarea>
+            </fieldset>
+            <button type="submit">Place Order</button> <!-- here this place order button is used to submit the form -->
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Abhicroz Pizza Pvt LTD 2023
+</body>
+
+</html>
