@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Sony Walkman 197</div>
+      <!-- toggle menu button -->
+      <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+      <div class="navLinks">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about-us.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- responsive side navbar -->
+    <div class="sideNav" id="sidenav">
+      <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+      <a href="/">Home</a>
+      <a href="./about-us.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+    <!-- Header content with banner image -->
+    <div class="row">
+      <div class="column1">
+        <h1>Sony Walkman 197</h1>
+        <p>
+          The Sony WM-FX197 AM/FM Radio/Cassete Walkman(R) Player lets you hear
+          your old mix tapes and listen to your favorite radio stations while
+          you travel. The Mega Bass(R) Sound delivers powerful bass and the
+          Automatic Volume Limiter System (AVLS) maintains a strong signal for
+          maximum listening comfort. The slim design makes it easy to carry
+          anywhere. LED battery indicator Belt clip .com ---- Why not take you
+          tunes along with you? You can do it affordably with the Sony WM-FX197
+          AM/FM cassette Walkman. Pop in a tape, or tune your favorite station
+          on the AM/FM radio. You'll also hear richer, deeper lows with Sony's
+          mega-bass technology
+        </p>
+        <button>PURCHASE</button>
+      </div>
+      <div class="column2">
+        <img
+          src="https://i.pinimg.com/originals/13/11/2c/13112cf518eafc020335f3b63de9a32d.jpg"
+          alt="banner"
+          width="500px"
+        />
+      </div>
+    </div>
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>
+              The Sony WM-FX197 AM/FM Radio/Cassete Walkman(R) Player lets you
+              hear your old mix tapes and listen to your favorite radio stations
+              while you travel. The Mega Bass(R) Sound delivers powerful bass
+              and the Automatic Volume Limiter System (AVLS) maintains a strong
+              signal for maximum listening comfort.
+            </p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address" />
+            <input type="submit" name="" value="Send" />
+            <div class="media-icons">
+              <a href="#">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png"
+                  alt=""
+                  width="40px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+                  width="40px"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk"
+                  alt=""
+                  width="40px"
+                />
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- javascript to make side menu appear -->
+    <script>
+      function openNav() {
+        document.getElementById("sidenav").style.width = "50%";
+      }
+      function closeNav() {
+        document.getElementById("sidenav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>
